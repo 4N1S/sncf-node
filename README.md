@@ -102,6 +102,7 @@ The API is available at https://api.sncf.com
 **Examples**
 Request:
     /api/departures
+
     param: 
     location: The id of location example Montparnasse -> OCE:SA:87391003 
     date :Date and time to go (iso-date-time) example:20180316T133748
@@ -163,6 +164,7 @@ Request:
 **Examples**
 Request:
     /api/arrivals
+
     param: 
     location: The id of location example Montparnasse -> OCE:SA:87391003 
     date :Date and time to go (iso-date-time) example:20180316T133748
