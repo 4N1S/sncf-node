@@ -2,35 +2,41 @@
 
 ## Synopsis
 
-This projects helps you to make HTTP requests to the irail API.
+This projects helps you to make HTTP requests to the SNCF API.
 
 
 ## Installation
 
 ```sh
-npm install irail-node
+npm install sncf-node
 ```
 
 ```javasctipt
-var iralclient = require('irail-node');
+var iralclient = require('sncf-node');
 ```
 
 ```javasctipt
 // Public API
 
-var client = new irailclient();
+var client = new sncfclient();
 
 ```
 
-## iRail API
+## sncf API
 
-The iRail api allows anyone to query trains, stations, liveboards and connections.
+The SNCF Api is the open API for building cool stuff with mobility data. It provides the following services
 
-iRail api datasets are accessible by developers through an HTTP REST API.
+journeys computation
+line schedules
+next departures
+exploration of public transport data / search places
+and sexy things such as isochrones
+
+sncf api datasets are accessible by developers through an HTTP REST API.
 
 
 ## API Index
-The API is available at https://api.irail.be.
+The API is available at https://api.sncf.com
 
 
 ## Methods
@@ -175,23 +181,23 @@ Request:
 **Response**
 
 ```javasctipt
-{ 
-  version: '1.1',
-  timestamp: '1521241528',
-  station: 'Brussels-Central',
-  stationinfo:
-   { id: 'BE.NMBS.008813003',
-     locationX: '4.356801',
-     locationY: '50.845658',
-     '@id': 'http://irail.be/stations/NMBS/008813003',
-     name: 'Brussels-Central',
-     standardname: 'Brussel-Centraal/Bruxelles-Central' },
-  departures:
-   { number: '50',
-     departure:
-      [ [Object]]
-    }
-}
+[ { display_informations:
+     { direction: 'Paris-Montparnasse 1-2 (Paris)',
+       code: '',
+       network: 'SNCF',
+       links: [],
+       color: '000000',
+       label: 'AQUITAINE',
+       commercial_mode: 'TGV',
+       text_color: '',
+       name: 'AQUITAINE' },
+    table: { headers: [Array], rows: [Array] },
+    additional_informations: null,
+    geojson: { type: 'MultiLineString', coordinates: [] },
+    links: [ [Object], [Object], [Object], [Object] ] 
+  }
+]
+
 ```
 
 **Examples**
