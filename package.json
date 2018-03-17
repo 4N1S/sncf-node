@@ -1,0 +1,37 @@
+{
+  "name": "scnf-node",
+  "version": "0.0.1",
+  "description": "wrapper api for SNCF API",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4N1S/scnf-node.git"
+  },
+  "keywords": [
+    "transport",
+    "scnf",
+    "navitia",
+    "nodejs",
+    "wrapper"
+  ],
+  "author": "Anis Haboubi",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "latest",
+    "https": "latest",
+    "underscore": "latest",
+    "url": "latest",
+    "urlencode": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/4N1S/scnf-node/issues"
+  },
+  "homepage": "https://github.com/4N1S/scnf-node#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {}
+}
