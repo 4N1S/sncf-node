@@ -22,7 +22,7 @@ var client = new sncfclient();
 
 ```
 
-## sncf API
+## SNCF API
 
 The SNCF Api is the open API for building cool stuff with mobility data. It provides the following services
 
