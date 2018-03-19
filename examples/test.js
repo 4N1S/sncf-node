@@ -1,7 +1,7 @@
 var sncfclient = require('../index.js');
 // Public API
 
-var client = new sncfclient("1ba8d08e-ff03-434e-89a6-021e787ff9ce");
+var client = new sncfclient("");
 
 //function Search
 // client.coverage(function (error, data) {
