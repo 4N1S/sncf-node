@@ -18,7 +18,7 @@ var sncfclient = require('sncf-node');
 ```javasctipt
 // Public API
 
-var client = new sncfclient();
+var client = new sncfclient(API_KEY);
 
 ```
 
